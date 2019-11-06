@@ -11,9 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  *
@@ -65,7 +63,7 @@ public class UserDaoSqlite implements UserDaoInterface{
     }
 
     @Override
-    public List getAllUsers() {
+    public List<User> getAllUsers() {
 
         //Connector connector = new Connector();
         Connection connection = ConnectionFactory.getConnection();

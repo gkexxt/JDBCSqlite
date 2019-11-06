@@ -6,7 +6,6 @@
 package DataTable;
 
 import java.util.List;
-
 /**
  *
  * @author gkalianan

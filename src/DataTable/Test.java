@@ -5,9 +5,8 @@
  */
 package DataTable;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 /**
  *
@@ -19,7 +18,8 @@ public class Test {
         UserDaoSqlite db = new UserDaoSqlite();
   
         //System.out.println();
-        List<User> studentSet = db.getAllUsers(); 
+        List<User> studentSet = new ArrayList<> (); 
+        studentSet.addAll(db.getAllUsers());  
         for (int i = 0; i < studentSet.size(); i++) {
             //String arg = args[i];
             System.err.println(studentSet.get(i).getId());
