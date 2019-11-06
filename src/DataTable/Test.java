@@ -13,7 +13,7 @@ import java.util.Set;
  *
  * @author gkalianan
  */
-public class NewClass {
+public class Test {
     public static void main(String[] args) {
         //User user = new User(1,"Dennis","blaaaaaaaaaaa",5);
         UserDaoSqlite db = new UserDaoSqlite();
