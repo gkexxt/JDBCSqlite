@@ -14,14 +14,11 @@ public class DataTable {
     /**
      * @param args the command line arguments
      */
-  public static void main( String args[] ) {
- 
+  public static void main( String args[] ) { 
       
       Statement stmt = null;
       
-      try {
-         
-         
+      try {        
          Connection c = ConnectionFactory.getConnection();
          System.out.println("Opened database successfully");
 
