@@ -115,6 +115,7 @@ public class UserDaoSqlite implements UserDaoInterface{
                 return true;
             }
         } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
             ex.printStackTrace();
         }
         return false;
