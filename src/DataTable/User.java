@@ -15,15 +15,17 @@ public class User {
     private String name;
     private String pass;
     private Integer age;
-    
+    private String statusRunning;
+    private boolean control;
     public User() {
-
+     this.statusRunning= "STOPPED";   
     }
 
     public User(String name, String pass, Integer age) {
         this.name = name;
         this.pass = pass;
         this.age = age;
+        this.statusRunning= "STOPPED";
     }
 
     public User(Integer id, String name, String pass, Integer age) {
@@ -31,6 +33,7 @@ public class User {
         this.name = name;
         this.pass = pass;
         this.age = age;
+        this.statusRunning= "STOPPED";
     }
 
     public Integer getAge() {
@@ -60,9 +63,28 @@ public class User {
     public String getPass() {
         return pass;
     }
-
-    public void setPass(String pass) {
+    public void setPass(String pass ) {
         this.pass = pass;
+    }
+    
+        public boolean getControl() {
+        return control;
+    }
+    public void setControl(boolean control ) {
+        this.control = control;
+    }
+    
+   public String getStatusRunning() {
+        return statusRunning;
+    }
+   
+   
+/**
+ * Set status for downloads RUNNING,STOPPED,STARTING,STOPING
+ * @param statusRunning 
+ */
+    public void setStatusRunning(String statusRunning) {
+        this.statusRunning = statusRunning;
     }
 
 }
